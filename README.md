@@ -24,18 +24,6 @@ A solar energy company detected recurring anomalous behaviour across two photovo
 
 `Python 3` · `pandas` · `numpy` · `matplotlib` · `seaborn` · `Jupyter Notebooks`
 
-## Project Structure
-
-```
-├── notebooks/
-│   ├── 01_ImportacionDatos.ipynb       # Data ingestion & quality audit
-│   ├── 02_PreparacionVariables.ipynb   # Feature engineering & KPI creation
-│   └── 03_AnalisisInsights.ipynb       # EDA, anomaly detection & business case
-├── datos/                # Raw, intermediate and processed data (not versioned)
-└── docs/                 # Data dictionary, quality report, project objectives, executive report
-```
-
-> Notebooks must be run sequentially — each produces intermediate files consumed by the next.
 
 ## What Was Done
 
