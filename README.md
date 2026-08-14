@@ -1,6 +1,6 @@
 # Solar Power Plant — Anomaly Detection & Performance Analysis
 
-**End-to-end Data Science project** · Python · Pandas · Time-series · IoT/Sensor data · Business Case
+**End-to-end Data Science project** 
 
 ---
 
