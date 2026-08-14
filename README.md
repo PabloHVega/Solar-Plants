@@ -54,6 +54,3 @@ A solar energy company detected recurring anomalous behaviour across two photovo
 - Classified anomalies: normal dusk shutdowns (33.6%) vs. productive-hour failures (66%)
 - Full AS-IS / TO-BE business case with 3-year ROI model
 
----
-
-📄 **[Full executive report →](docs/executive_report.md)** — technical diagnosis, economic impact, proposed solution, investment plan, ROI (NPV/IRR/payback) and recommended next steps.
