@@ -1,6 +1,6 @@
 # Solar Power Plant — Anomaly Detection & Performance Analysis
 
-**End-to-end Data Science project** 
+**End-to-end Data Science project** `Python` · `pandas` · `numpy` · `matplotlib` · `seaborn` · `Jupyter Notebooks`
 
 ---
 
@@ -19,11 +19,6 @@ A solar energy company detected recurring anomalous behaviour across two photovo
 📄 **[Read the full executive report →](docs/executive_report.md)** for the technical diagnosis, economic impact, investment plan and ROI breakdown.
 
 ---
-
-## Tech Stack
-
-`Python 3` · `pandas` · `numpy` · `matplotlib` · `seaborn` · `Jupyter Notebooks`
-
 
 ## What Was Done
 
