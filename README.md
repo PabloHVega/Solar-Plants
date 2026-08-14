@@ -6,32 +6,23 @@
 
 ## Overview
 
-A solar energy company detected recurring anomalous behaviour across two photovoltaic plants (P1 and P2) that the maintenance subcontractor could not diagnose. The Data Science team was engaged to analyse 34 days of sensor and inverter data — identifying the root cause before any costly field engineering deployment.
+A solar energy company detected recurring anomalous behaviour across two photovoltaic plants (P1 and P2) that the maintenance subcontractor could not diagnose. This project analyses 34 days of sensor and inverter data to find the root cause and quantify the business case for fixing it — before any costly field engineering deployment.
 
 **Pipeline:** raw data ingestion → data quality audit → feature engineering → EDA → anomaly detection → executive business case with ROI projection.
 
----
+## Highlights
 
-## Key Results
+- **756 anomalies** detected across 44 inverters (95.5% critical), 66% occurring during productive hours
+- **€50,504/year** in preventable revenue loss identified
+- Proposed fix: **38.5% IRR**, payback in **1.75 years**
 
-| Metric | Value |
-|--------|-------|
-| Anomalies detected | **756 events** (95.5% critical) |
-| Inverters requiring urgent intervention | **24 / 44** |
-| Generation loss detected (25-day window) | **49,439 kWh** |
-| Estimated annual revenue loss (AS-IS) | **€50,504 / year** |
-| Projected annual benefit (TO-BE) | **€58,903 / year** |
-| ROI payback period | **12–18 months** |
-
-Plant 2 accounts for **87% of all anomalies**, concentrated in 4 specific inverters.
+📄 **[Read the full executive report →](docs/executive_report.md)** for the technical diagnosis, economic impact, investment plan and ROI breakdown.
 
 ---
 
 ## Tech Stack
 
 `Python 3` · `pandas` · `numpy` · `matplotlib` · `seaborn` · `Jupyter Notebooks`
-
----
 
 ## Project Structure
 
@@ -40,17 +31,11 @@ Plant 2 accounts for **87% of all anomalies**, concentrated in 4 specific invert
 │   ├── 01_ImportacionDatos.ipynb       # Data ingestion & quality audit
 │   ├── 02_PreparacionVariables.ipynb   # Feature engineering & KPI creation
 │   └── 03_AnalisisInsights.ipynb       # EDA, anomaly detection & business case
-├── datos/
-│   ├── brutos/          # Raw CSVs (2 plants × generation + sensors)
-│   ├── intermedios/     # Analytical tables (.pkl)
-│   └── procesados/      # Final anomaly output (.csv)
-├── docs/                # Data dictionary, quality report, project objectives
-└── entregables/informes/  # Executive report + anomaly summary
+├── datos/                # Raw, intermediate and processed data (not versioned)
+└── docs/                 # Data dictionary, quality report, project objectives, executive report
 ```
 
 > Notebooks must be run sequentially — each produces intermediate files consumed by the next.
-
----
 
 ## What Was Done
 
@@ -71,14 +56,4 @@ Plant 2 accounts for **87% of all anomalies**, concentrated in 4 specific invert
 
 ---
 
-## Business Impact
-
-| | AS-IS | TO-BE | Δ |
-|---|---|---|---|
-| Annual generation loss | 721,485 kWh | 144,297 kWh | **−80%** |
-| Annual revenue loss | €50,504 | €10,101 | **−80%** |
-| Fault detection time | >15 days | <24 hours | **−95%** |
-
----
-
-
+📄 **[Full executive report →](docs/executive_report.md)** — technical diagnosis, economic impact, proposed solution, investment plan, ROI (NPV/IRR/payback) and recommended next steps.
